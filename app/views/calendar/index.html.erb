@@ -1,0 +1,28 @@
+<div class="event-calendar">
+    <table>
+        <caption><%= Date.today.year %>年<%= Date.today.month %>月</caption>
+        <tbody>
+            <tr>
+              <% @weekdays.each do |weekday| %>
+                <th><%= weekday %></th>
+              <% end %>
+            </tr>
+            <% @calendar_days.each_with_index do |day, i| %>
+                <% if i == 0 || i % 7 == 0 %>
+                    <tr>
+                <% end %>
+                <td>
+                    <p>
+                        <%= day %>
+                    </p>
+                    <div>
+                        <!-- ここにカレンダー１日単位で情報埋める -->
+                    </div>
+                </td>
+                <% if i !=  0 && (i + 1) % 7 == 0 %>
+                    </tr>
+                <% end %>
+            <% end %>
+        </tbody>
+    </table>
+</div>
