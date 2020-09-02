@@ -1,0 +1,55 @@
+// Place all the styles related to the calendar controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div.event-calendar {
+  float: left;
+
+  table {
+    width: 325px;
+    margin-right: 5px;
+
+    caption {
+      font-size: 14px;
+      color: #479384;
+      border: 1px solid #b9b9b9;
+      border-bottom: none;
+      padding: 14px 0 12px;
+      text-align: center;
+    }
+
+    tbody {
+      display: table-row-group;
+      vertical-align: middle;
+      border-color: inherit;
+
+      tr {
+        display: table-row-group;
+        vertical-align: inherit;
+        border-color: inherit;
+
+        th {
+          width: 325px;
+          text-align: center;
+          vertical-align: top;
+          color: #479384;
+          background-color: #ecf7f5;
+          border: 1px solid #b9b9b9;
+          padding: 6px;
+        }
+
+        td {
+          text-align: center;
+          border: 1px solid #b9b9b9;
+          font-size: 11px;
+          width: 14%;
+          height: 60px;
+
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
